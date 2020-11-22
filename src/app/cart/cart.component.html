@@ -1,0 +1,20 @@
+<div class="head">
+    <img src="../../assets/img/carrito.jpg" alt="">
+    <h3>Carrito de compras</h3>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cantidad</th>
+            <th>Articulo</th>
+            <th>Costo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let articulo of (cartList$ | async)">
+            <td>{{articulo.quantity}}</td>
+            <td>{{articulo.name}}</td>
+            <td>${{articulo.price}}</td>
+        </tr>
+    </tbody>
+</table>
