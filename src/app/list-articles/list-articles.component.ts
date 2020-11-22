@@ -15,21 +15,21 @@ export class ArticlesListComponent implements OnInit {
       name: "tarjeta para bautismo",
       price: 12,
       stock: 3,
-      image: "",
+      image: "assets/img/tarjetaBautismo.jpg",
       quantity: 0,
     },
     {
       name: "set de abanicos",
       price: 560,
       stock: 7,
-      image: "",
+      image: "assets/img/abanicos.jpg",
       quantity: 0,
     },
     {
       name: "banderin",
       price: 280,
       stock: 12,
-      image: "",
+      image: "assets/img/banderin.jpg",
       quantity: 0,
     }
   ]

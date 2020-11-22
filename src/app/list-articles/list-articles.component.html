@@ -7,13 +7,12 @@
             <th>Stock</th>
             <th>Cantidad</th>
             <th>Compra</th>
-        </tr>
+        </tr> 
     </thead>
     <tbody>
         <tr *ngFor="let articulo of articulos">
             <td><img class="img-thumbnail" width="100" [src]="articulo.image" [alt]="articulo.name"></td>
             <td>{{articulo.name}}</td>
-            <td>{{articulo.size}}</td>
             <td>{{articulo.price | currency}}</td>
             <td>
                 <span class="badge badge-warning" *ngIf="articulo.stock==0; else disponible">Sin Stock</span>
